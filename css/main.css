@@ -1,0 +1,31 @@
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+
+body {
+    background-color: #33FF33;
+}
+.Notes {
+    background-color: #33CC33;
+}
+.notion {
+    background-color: white;
+}
+.notion-title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+div {  
+    padding: 20px;
+    border-radius: 50px;
+}

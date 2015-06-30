@@ -1,0 +1,503 @@
+<!DOCTYPE HTML> 
+<html>
+
+ <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <title>The basics of the Web and HTML</title>
+ </head>
+
+
+<body>
+<div class="notion">
+    <div class="notion-title">
+    The Web, Hyperlinks, HTML, HTTP
+    </div>
+    <div class="notion-description">
+    The Web is a collection of web pages. The links between these pages are called Hyper links. A web page is a text document written in a language called HTML. The browser displays an HTML document as a web page.
+
+URLs - how you refer to documents on the web.
+
+There are all different types of files on the web: plain text, HTML, images, videos and music. The browser running on a computer makes a request (using the protocol HTTP - the main protocol of the web) to the servers via Internet. The servers return files that the browser reads, interprets and displays.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    HTML(Hyper Text Markup language)
+    </div>
+    <div class="notion-description">
+    HTML is made up of :
+
+text content - what you see on the web page - the content;
+markup - how the content is arranged;
+references to other documents
+links to other pages.
+The markup is made of tags. HTML tags are used to show the browser the types of HTML elements. An HTML element refers to everything within a set of opening and closing tags. How to connect an HTML document to any other document on the internet by adding links.
+
+HTML attributes - a property of an HTML element:
+
+&lt;tag attr="value"&gt;contents &lt;/tag&gt;
+
+&lt;a href="www.reddit.com"&gt; derf &lt;/a&gt;
+
+Anchor tag - &lt;a&gt; for making links
+
+href - attribure name
+
+derf would be a link to reddit.com
+
+&lt;img&gt; image tag for including images
+
+&lt;img scr="url"alt="text"&gt;
+
+scr - attribute called source which equals to URL - the URL of the image to download. alt - attribute - alternate, and this is the text that gets displayed when the image doesn't load. Image tag doesn't have a closing tag. It's a VOID tag, it doesn't have a content.
+
+Whitespace - single space -written in one line
+
+&lt;br&gt; break (void) for multiple lines. &lt;br&gt; - inline, ending a line
+
+text&lt;br&gt;text
+
+&lt;p&gt; paragraph, it's not a VOID tag, it has a content &lt;p&gt;content&lt;/p&gt;
+
+HTML elements can be either inline or block.
+
+&lt;p&gt; is a block element, it makes an invisible box. It has height and width.
+
+&lt;p&gt;text&lt;/p&gt;
+
+&lt;strong&gt; - inline
+
+&lt;form&gt; - block
+
+Container elements
+
+&lt;span&gt;text&lt;/span&gt; - inline.
+
+&lt;div&gt;text&lt;/div&gt; - block
+
+Computers understand only clear instructions. 
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    The Structure of HTML document
+    </div>
+    <div class="notion-description">
+    HTML controls structure and has a specific syntax and rules. CSS controls style. Java script - interective components.
+
+HTML elements are rectangular. Everything on a web page is actually a box. Some elements are invisible (like the head element) You can read the same text as on the page.The structure of an HTML document is as follows:
+
+&lt;!DOCTYPE HTML&gt; - doctype
+
+&lt;html&gt; opening tag (surrounds the entire document)
+
+&lt;head&gt; meta-data (CSS, java script)
+
+&lt;title&gt;Title!&lt;title&gt; - title of the page
+
+&lt;/head&gt;
+
+&lt;body&gt; contents of the doc
+
+content
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+The "tree-like structure" of HTML.
+
+The blowser uses HTML tags as elements to form a tree-like structure according to the standard convention for representing and interacting with elements in HTML - DOM (Document Object Model).
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Inheritance. Why is it important to avoid repetition?
+    </div>
+    <div class="notion-description">
+    CSS stands for "Cascading Style Sheets." "Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. Inheritance is a key feature in CSS. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align text-indent, text-transform, visibility, white-space and word-spacing. Properties that cannot be inherited are background, border, display, float and clear, height and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index. Inheritance prevents certain properties from being declared over and over again in a style sheet.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    3 ways to include CSS styling:
+    </div>
+    <div class="notion-description">
+    Writing CSS in the head of HTML. It suits for small projects;
+Linking your HTML to a separate CSS file;
+Writing your style inline with your HTML.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Selectors
+    </div>
+    <div class="notion-description">
+    The first thing you write in CSS is a selector. Selectors allow to target HTML elements and apply style to them. ID selectors are the most powerful type of selector. Class selectors are the most useful and well supported in all browsers. Tag selectors are necessary to change properties that are unique to that particular HTML element, f.ex. list-style. You can also combine selectors.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Box sizing
+    </div>
+    <div class="notion-description">
+    HTML elements are boxes that have 4 components There are 2 techniques to deal with sizing issues:
+
+Set sizes in terms of percents than pixels;
+Set the box-sizing attribute to border-box for every element.
+Divs are block elements - they take the whole width of a page by default. Adding the rule display:flex; allows divs to appear next to each other.
+
+NB:Different browsers display the same code differently.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Computer Program, Python, Expressions
+    </div>
+    <div class="notion-description">
+    A computer is a universal machine that we can program to do almost anything. A programmer writes a computer program - a precise sequence of steps, that can be a web browser, the Python interpreter, calender application or the Python code. The computer executes the steps of a program super fast. There are a lot of languages to program computers. They are special languages invented for computer programming, they are different from natural languages as they don't allow ambiguity and verbosity to mislead a computer.
+
+Python is one of the programming languages. Python Interpreter is a program that runs, interprets and executes the code, written in Python language. There are certain grammar rules in Python that we use to write a program, they allow us to form sentences from the parts of speech. The way we're writing grammars is a notation called Backus-Naur Form invented by John Backus.
+
+An expression is a combination of values, variables, and operators. A value all by itself is considered an expression. Grammar starts with a non-terminal expression. Each rule has the following form: on the left side there's a non-terminal (something that we're not finished with). Then there's an arrow, and then on the right side there's a replacement (a terminal). We can form a sentence by starting from some non-terminal, and then by following the rules we keep replacing non-terminals with their replacements until we're left with only terminals.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Variables, Strings
+    </div>
+    <div class="notion-description">
+    A variable in Python is like a box where you can store a value. A variable is a name for a value. Variables allow to give names to values. The name can be any sequence of letters, numbers as well as underscores as long as it starts with a letter or an underscore. F.ex. speed_of _light.
+
+To introduce a value we use an assignment statement. The equal sign (=) is used to assign values to variables. Pythons usage of the equal sign is not the mathematical usage of the equal sign. An assignment statement associates a variable name on the left of the equal sign with the value of an expression calculated from the right of the equal sign. Once a variable is assigned a value, the variable can be used in place of that value. F.ex. sum is a variable with a value 5. sum = 5 The variable sum takes the value of 5. We alsways need to introduce a variable before we use it. print sum + sum The result is 10.
+
+There are different ways to use variables:
+
+Variables make the code easier to understand;
+Variables allow to store the value of some data;
+Variables allow to change the value of some data. When we use the variable again, it refers to the new value.
+String is a sequence of characters surrounded by quotes, single or double. We can put strings together by using the plus operator. The new string is the result of pasting 2 strings together: string + string - concatenation. We can't add numbers and strings together. We can multiply strings though. It's also possible to extract subsequences from the string. [] brackets are used to extract part of the string.
+
+The difference between 2+2 and "2"+"2" is as follows: 2 is a number, and 2 in quotes "2" is a string. So, this difference will lead to different results: 2+2 is 4. The code "2"+"2" would give "22".
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Functions
+    </div>
+    <div class="notion-description">
+    A function is a program that performs a specific task. It takes an input, works with it, changes it accoring to a certain pathern and returns an output. F.ex. a function named sum can take numbers and calculate and return a sum of these numbers as output.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    There is a difference between making and using functions.
+    </div>
+    <div class="notion-description">
+    A function has a following structure:
+
+A line of code with a keyword def;
+A function name
+Parameters in parenthesis
+The code that specifies what we are going to do with the parameters
+The parameters will be replaced by actual values when the function is called. To call a function we use its name followed by the values in the parenthesis.
+
+Example:
+
+def sum(a,b)
+return a+b
+print sum (1,4)
+Functions help to avoid repetitions. After you have created a function, you can use it at any time, in any place. This saves you the time and effort of having to retell the computer what to do every time it does a common task.
+
+If a function doesn't have a return statement, we won't see an output. We'll get the result none. The return keyword tells Python what the function should produce as output.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    If statements
+    </div>
+    <div class="notion-description">
+    The If statement is used for conditional execution: it allows to control what code executes based on the result of a test expression. The code in &lt; block &gt; only executes if test expression has a true value. Else clause is used in an if statement to provide code that will run when the &lt; TestExpression &gt; has a False value.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Operators
+    </div>
+    <div class="notion-description">
+    There are different types of operators in Python:
+
+Arithmetic Operators, f.ex. +, - , *, /;
+Comparison Operators, such as &lt;, &gt;, &lt;=, &gt;=, ==, !=
+Assignment operator: =
+Logical Operators. The and and or operators behave similarly to logical conjunction (and) and disjunction (or). The important property they have which is different from other operators is that the second operand expression is evaluated only when necessary. A boolean expression (or logical expression) evaluates to one of two states true or false. Python provides the boolean type that can be either set to False or True.
+etc.
+    </div>
+ </div>
+ <div class="notion">
+    <div class="notion-title">
+    Loops
+    </div>
+    <div class="notion-description">
+    A loop is a way to do things over and over again. We use loops when we need to execute a block of code several number of times.
+
+The While loop repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body. If the &lt; TestExpression &gt; evaluates to False, the while loop is done and execution continues with the following statement. If the &lt; TestExpression &gt; evaluates to True, the &lt; Block &gt; is executed. Then, the loop repeats, returning to the &lt; TestExpression &gt; and continuing to evaluate the &lt; Block &gt; as long as the &lt; TestExpression &gt; is True.
+
+while &lt; TestExpression &gt;:
+&lt; Block &gt;
+The For loop allows to execute a block once for each element of a collection:
+
+for &lt; Name &gt; in &lt; Collection &gt;:
+&lt; Block &gt;
+The loop goes through each element of the collection, assigning that element to the &lt; Name &gt; and evaluating the &lt; Block &gt;.
+    </div>
+ </div>
+      <div class="notion">
+      <div class="notion-title">
+      What Object-Oriented Programming is and why it is a valuable tool for large programming objects. 
+      </div>
+      <div class="notion-description">
+      <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects" which are data structures that contain data. It uses objects and their interactions to design applications and computer programs. Everything in Python is an object. Objects are basic building blocks of a Python OOP program.</p>
+      <p>OOP allows to make a code more readable for programmers, by putting objects at the center of the process. It  helps to create and use classes and objects very easy. 
+      Especially if programs get more complex, object-oriented approaches help to write them in a more elegant way. 
+      One of the basic programming concepts in OOP is abstraction. The abstraction is simplifying complex reality by modeling classes appropriate to the problem. The other concept is inheritance - a way to form new classes using classes that have already been defined. It's a huge advantage of OOP because it allows to reuse a code, instance variables and instance methods. F.ex. class Child(Parent): </p>
+      <p>It means that the class Child will now inherit or reuse everything that is publicly available in class Parent.</p>
+      <p>Another advantage of OOP is method overriding. It is the ability of a sub-class to override a method that inherited from its parent.</p>
+
+       </div>
+       </div>
+
+     
+      <div class="notion">
+      <div class="notion-title">
+      Classes, instances, modules, methods. Python Standard Library.
+      </div>
+      <div class="notion-description">
+      <p>What is a <b>class</b>? We can imagine a class as a neatly packaged box. A class is an extensible program-code-template for creating objects. One class can be used to instantiate multiple objects.It is a user-defined prototype for an object that defines a set of attributes that characterize any object of the class. F.ex the class Turtle inside the module turtle. The class Turtle contains certain pieces of information about the turtle, its size, color etc. We can create multiple instances of that class.The code turtle. Turtle in fact calls a function def ...init... Init stands for intialize. It creates space in memory for a new instance or a new object of the class Turtle. It is also called a constructor.<br>
+       If we call the instance brad, it now can access all other methods inside the class Turtle such as def forward and def right. </p>
+       <p>brad=turtle.Turtle()</p>
+       <ul>
+       <li>turtle</li>
+       <li>class Turtle():</li>
+       <li>   def __ init __ ():</li> 
+       <li> brad.forward(100)</li> 
+
+       </ul>
+       <p> A variable that is shared by all instances of a class is called a <b>class variable</b>. Class variables are defined within a class but outside any of the class's methods.</p>
+
+
+      <p><b>An instance</b> is a specific realization of any object. It is an example, an individual object of a certain class. 
+      If we take class Turtle f.ex., it has information about the turtle, how to make the turtle move forward, turn right etc.We can use this one class as a template to create multiple instances. These instances can do things that are defined inside the class Turtle.</p>
+      <p>All the variables associated with a specific instance are called <b>instance variables</b>. These are unique to an object and can be accessed using the self keyword inside the class and the instance name outside the class.</p>
+      <p>All the functions inside the class that are associated with an instance and have the first argument as self are called <b>instance methods</b>.</p>
+      <p><b>Python Standard Library</b> is something that we download with Python. This library is very extensive and has a wide range of facilities. Inside it there are files called <b>modules</b>. Modules include classes. Classes in their turn can have both data and methods(functions). A function that is defined inside the class is called a <b>method</b>. F.ex. The module webbrowser has a function open - def open. In the module time there are functions like def ctime which gives you the current time and def sleep which suspends program animation for some time. We don't know how these functions work behind the scenes. This detail that is hidden from us is called abstraction in programming. This allows us to write a program by reading the documentation.</p>
+      
+       </div>
+       </div>
+
+      <div class="notion">
+      <div class="notion-title">
+      Some simple additional notes on Python.
+      </div>
+      <div class="notion-description">
+      <p>To ctreate a program it is necessary to write steps first. In Python we use IDLE as a notepad to write a code.</p>
+      <p>To open a web browser in Python: <br>
+      import webbrowser<br>
+      webbrowser.open("link")</p>
+      <p>To make a program wait in Python<br>
+      import time - to import time module in Python<br>
+      time.sleep(the number of seconds)</p>
+      <p>To find files in a folder in Python: os.listdir() - that will give you everything in the given directory. OS - is a module in Python Standard Library, short for Operating System. That has a function inside it called listdir that lists everything that is in the given directory. The function listdir takes in a path of the folder that contains the necessary information: os.listdir(r"path"). We use r (rawpack) to tell Python to take the string as it is and not to interpret it differently. </p>
+      <p>There is another function inside OS module its def rename. It's used for renaming files.</p>
+      </div>
+      </div>
+
+      <div class="notion">
+      <div class="notion-title">
+      Adding a movie trailer.
+      </div>
+      <div class="notion-description">
+
+      <p>I file</p>
+      <ul>
+         <li>import webbrowser</li>
+         <li>class Movie():</li>
+             <li>def __init__(self, movie_title, trailer_youtube):</li>
+                 <li>self.title = movie_title</li>
+                 <li>self.trailer = trailer_youtube</li>
+             <li>def show_trailer(self):</li>
+                 <li>webbrowser.open(self.trailer)</li>
+
+      </ul>
+
+            
+      <p>II file</p>
+      <ul>
+        <li>import my_movie</li>
+
+        <li>cinderella = my_movie.Movie("Cinderella","https://www.youtube.com/watch?v=WRuHM6rLSF8")</li>
+        <li>print (cinderella.title)</li>
+        <li>cinderella.show_trailer()</li>
+      </ul>   
+
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WRuHM6rLSF8" allowfullscreen></iframe>
+      </div>
+      </div>
+
+      <div class="notion">
+      <div class="notion-title">
+      How OOP is connected to HTML and CSS.
+      </div>
+      <div class="notion-description">
+      <p>HTML and CSS are not programming languages, but they have something in common with OOP. As objects are in center of OOP, the same in HTML and CSS, we see visual patterns in a design, as objects.  If we think of chunks of HTML that define sections of a web page as "objects" or "modules", then we have CSS classes that we apply to objects, which define the design of the object. </p>
+      <p>So, websites are developed with help of some concepts that are also used in OOP, such as: </p>
+      <ul>
+          <li>A code can be reused. CSS can be reusable and stylesheets may also become much smaller.</li>
+          <li>It's easy to maintain a code and it is more simple for others to read the code.</li>
+          <li>Abstraction is used to manage complexity. It allows to create an object by breaking up the larger complex system into smaller and simpler pieces. F. ex. We can abstract the concept of a shape by taking the essential characteristics of what makes a shape and placing them together somewhere. I think defining the visual patterns in a design would count as abstraction.</li>
+          <li>The ability to add multiple classes to html parallels the idea of inheritance. Inheritance is a way to reuse the code of one object to establish a subtype of that object. It enables new objects to take on the characteristics of the existing object.</li>
+          <li>In OOP an object can be of different types. It  can behave like one thing under certain circumstances and like another thing under a different set of circumstances. Selectors in CSS f. ex. enable CSS to behave differently under different contexts.</li>
+          <li>Also, the object can be improved regardless of other objects. If you want some html to look a certain way you can add a class without needing to know the specific CSS inside.</li>
+
+      </ul>
+      <p>Thus, designing websites more efficiently is possible due to some OOP principles.</p>
+      </div>
+    </div>
+
+
+      <div class="notion">
+        <div class="notion-title">
+          Setting up a server and server-side programming.
+          </div>
+      <div class="notion-description">
+      <p>A server is a computer that interacts with a request we make to the computer. F.ex. google.com - request to Google servers - to return a website. </p>
+      <p>I.Networks</p>
+      
+          <p>Network is a group of entities (people, computers, organizations) that can communicate, even though they don't have to be all directly connected. There have to be at least 3 entities(A, B, C). A is not directly connected to C. But A can send a message through B. </p>
+
+          <p>What we need to make a network:</p>
+      <ul>
+          <li>the way to encode and interpret messages</li>
+          <li>the way to route messages</li>
+          <li>rules for deciding who gets to use resources. If f.ex. there are 2 messages that go through the same place, only one can be sent at a time. We need to figure out when.</li>
+                
+      </ul>
+        <p>There are 2 ways for measuring networks: latency and bandwidth.
+        Latency - time it takes a message to get from source to destination. And that's for the start of the message. So, we can measure latency by timimg when you start sending to the time that the receiver starts receiving. This is a unit of time. It is measured in seconds and now in miliseconds. 1000 miliseconds = 1 second. Bandwidth - amount of information that can be transmitted per unit of time. It can be measured in bits per second (units of information divided by units of time). In the Internet it is measured in Mbps(megabits per second or million bits per second).</p>
+        <p>What we need to make a network work is a protocol. It is a set of rules that people agree to, that tell you how entities can talk to each other. So, for the web, the protocol gives rules about how a client and a server talk to each other. The client is a webbrowser and the server is the webserver. If you want the server to do something, the client has to send a message in a particular way. The protocol that is used on the web is called hypertext transfer protocol (HTTP). All URLs start with HTTP. There are 2 main messages that we send to the server.  GET is one of them - GET + the name of the object you want to get. You send a web request using your browser by clicking on a link. the browser figures out what is requested, then it sends a get message to the right web server. That was the server specified by the URL. The server will receive the message, will run some code on it and will find the requested file and will send back a response, which is the contents of the requested object. It is actually what is happening when you click on a link.</p>
+        <p>To make Internet connection you need 2 things the address of the mashine, represented by the host and a port. HTTP requests begin with a request line. The method is a type of requets we are making to the server.
+        <p>GET - this is how we get the document from the server.</p>
+        <p>POST - another method used for sending data to the server.</p>
+        <p>Difference between GET and POST:</p>
+        <h4>GET</h4>
+        <ul>
+          <li>parameter in URL</li>
+          <li>used for fetching documents</li>
+          <li>used to describe what document we are looking for</li>
+          <li>has maximum URL length</li>
+          <li>ok to cache</li>
+          <li>shouldn't change the server</li>
+        </ul>
+
+        <h4>POST</h4>
+        <ul>
+          <li>parameter in the body</li>
+          <li>used to update data (we are making changes to the server)</li>
+          <li>no max length</li>
+          <li>not ok to cache (never cached)</li>
+          <li>ok to changed the sever</li>
+        </ul>
+        <h4>Absolute vs Relative Paths.</h4>
+        <p>Relative path for the URL gives an address that is "relative to the host". A full website address includes http://www. - this is an absolute path. It always includes the domain name of the website. The relative path only points to a file, a file path. The request line is followed by a number of headers: Host:www.example.com User-Agent: chrome v.17 It describes who is making the request(Browser + some version info). When we make a request all of these is sent at once. Web browsers may have multiple names. One web server can host the website for lots of websites. User- agent is one of the most important headers in HTTP request. It is important to use good user-gaents when writing software as it is an nice thing, it makes the web work well for everybody.</p>
+        <h4>HTTP responses</h4>
+        <p>The server sends back the response, the document you requested or information about that document.</p>
+        <p>Status line - HTTP/1.1 zoo ok</p>
+        <p>The version of the status line matches the version of the request line.And it is followed by status code and reason phrase.The status line is followed by headers: Date, Server, Content-type, Content-length.</p>
+        <h4>Classification of responses from the server.</h4>
+        <p>The responses can be static and dynamic. Static - is a prewritten file, that the server just returns(image). Dynamic - responses that are built on the fly by a program. Every content online is dynamic. They were built by programs called web applications.A web application is a program that generates content. It is on the webserver, understands HTTP and generates content that the browser requests.</p>
+           
+           
+       </div>
+    </div>
+    <div class="notion">
+        <div class="notion-title">
+        Validation
+        </div>
+      <div class="notion-description">
+        <p>Validation - is verifying on the Server side that what we received is the data we expected. Sometimes the server gets a junk, completely broken data.</p> 
+        <p>There are some possible solutions to users entering bad data into our form:</p>
+        <ul>
+          <li>1. We can use dropdowns and that will limit what is entered into our form.</li>
+          <li>2. We should verify what is entered and complain if the data is junk.</li>
+        </ul>
+        <p>How validation works:</p>
+        <p>The user makes a request to the server for the form. This is a GET request. The server responds with the form data. Then the user makes a POST request to the server with the data. Then the server runs the validation. If the data is normal, the server will return "Thanks", if not, the server will return the form data again with an error message. </p>
+        <p>The user can also break our form by entering HTML, we need so called escaping for this. HTML allows us to escape certain characters or change them. F.ex. (") we convert into (&amp;). </p>
+        <p>There is a function that is already included in Python.</p>
+        <p>import cgi</p>
+        <p>def escape_html(s):</p>
+          <p>return cgi.escape(s, quote=True)</p>
+
+        <p>Also, it is nice to redirect aftre a form submission, so that reloading the page doesn't resubmit the form. We can have distinct pages for forms and success pages. Redirection will allow us to share success link and and we'll be able to reload the page without an annoying message.</p>
+        <p>To do redirect we need:</p>
+        <ul>
+          <li>to make a "thanks" handler;</li>
+          <li>add the /thanks url;</li>
+          <li>redirect to the /thanks url.</li>
+        </ul>
+
+
+      </div>
+    </div>
+
+    <div class="notion">
+      <div class="notion-title">
+      HTML Templates
+      </div>
+      <div class="notion-description">
+      <p>HTML embedded in code can be really difficult to maintain. Any change to the design of the page requires a change to the Python code. The design of a site tends to change far more frequently than the underlying Python code, so it would be convenient if the design could change without needing to modify the Python code. It’s much cleaner and more maintainable to separate the design of the page from the Python code itself.</p>
+      <p>It's better to use a templating system, where the HTML is kept in a separate file with special syntax to indicate where the data from the application appears. A template is a document or a file having a present format, used as a starting point for a particular application so that the format does not have to be recreated each time it is used.</p>
+      <p>Avoiding repetition by using templating  systems will let you make complex applications easily. Templates refer to a library. A template library is a library to build complicated strings. When we create a web application, most of the time we're referring to HTML. F.ex. jinja2 is a template library built into GoogleAppEngine. </p>
+      <p>The most powerful part of Jinja is template inheritance. Template inheritance is an approach to managing templates that resembles object-oriented programming techniques. You can inherit the contents of one template to another (like extending a class) and change blocks of content therein (like overriding methods of a class.) This keeps template management minimal and efficient, since each template only contains the differences from the template it extends.</p>
+      <p>There are certain useful tips to make a better template:</p>
+      <ul>
+        <li>Always automatically escape variables when possible;</li>
+        <li>Minimize code in templates;</li>
+        <li>Minimize HTML in code;</li>
+        <li>Make more readable code.</li>
+      </ul>
+      
+
+      </div>
+    </div>
+
+
+    <div class="notion">
+      <div class="notion-title">
+        Adding comments
+      </div>
+      <div class="notion-description">
+        {% if error %}
+          <div style="color:red">{{ error }}</div>
+        {% endif %}
+        <form method="post" action="/">
+          <label>Name&nbsp;</label><input type="text" name="username" value="{{ username }}"><br>
+          <label>Comment&nbsp;</label><input type="text" name="comment" value="{{ comment }}"><br>
+          <br>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+    <div class="notion">
+      <div class="notion-title">
+        Last comments:
+      </div>
+      <div class="notion-description">
+        {% for entry in comments %}
+          <p>{{ entry.date.strftime('%x %X') }}:&nbsp;<b>{{ entry.username }}</b> said "{{ entry.comment }}"</p>
+        {% endfor %}
+      </div>
+    </div>
+</body>
+</html>
