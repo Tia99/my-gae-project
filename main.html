@@ -8,6 +8,7 @@
 
 
 <body>
+<div id="main"></div>
 <div class="notion">
     <div class="notion-title">
     The Web, Hyperlinks, HTML, HTTP
@@ -467,7 +468,59 @@ The loop goes through each element of the collection, assigning that element to 
         <li>Minimize HTML in code;</li>
         <li>Make more readable code.</li>
       </ul>
-      
+    <div class="notion">
+      	<div class="notion-title">
+      JavaScript
+      	</div>
+      	<div class="notion-description">
+      	<p>JavaScript  is the programming language of the web. JavaScript runs in the browser. It allows to run an inspector code very easily.
+      	</p>
+      	<p>In JavaScript we save data in the form of variables. Regardless of the datatype we are saving we begin with the keyword var to declare a new variable. Var declares a new variable for all data types.</p>
+      	<ul>
+      		<li>Var firstName = "John"</li>
+      		<li>Var age = 30</li>
+      	</ul>
+      	<p>Saving variables in Python and JavaScript are pretty similar. Numbers don't need quotes, the same with floating point numbers and integers, as all numbers are saved 64 bit floating. Arrays, functions and even objects use the same var syntax.</p>
+      	<ul>
+      		<li>Var myarray = [ ];</li>
+      		<li>Var myfunction = [ ];</li>
+      		<li>Var myobject = [ ];</li>
+      	</ul>
+      	<p>The browser opens up a script with console.log in it. It prints any information it receives to the browser console. It is a useful trick to debugging code.</p>
+      	<h4>Methods in JavaScript</h4>
+      	<h5>The replace ( ) method</h5>
+      	<p>The replace () method returns a new string with some or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for  each match.</p>
+      	<p>[string].replace ( [old], [new])</p>
+      	<p>We can also replace placeholders in HTML with real data.</p>
+      	<h4>The append() and prepend() methods</h4>
+      	<p>Adding new stuff to existing elements is very easy with jQuery. There are methods for appending or prepending, taking HTML in string format, DOM elements and jQuery objects as parameters. With .append(), the selector expression preceding the method is the container into which the content is inserted. Append() adds something to the end of a page. Pretend() adds something to the beginning of HTML.</p>
+      	<h4>The slice() method</h4>
+      	<p>The slice() method extracts a section of a string and returns a new string. Changes to the text in one string do not affect the other string.</p>
+      	<p>Str.slice(beginSlice[,endSlice])</p>
+      	<p>beginSlice - the zero-based Index at which to begin extraction. If negative, it is treated as sourceLength + beginSlice where sourceLength is the length of the string.</p>
+      	<p>endSlice is optional. The zero-based index at which to end extraction. If omitted slice() extracts to the end of the string. It negative, it is treated as sourceLength + endSlice.</p>
+      	<h4>Truthy and Falsy Values</h4>
+      	<p>JavaScript has a set of values that can evaluate to true or false, but many not equal to true or false. Because of this, we call these values truthy and falsy.</p>
+      	<p>The following values are always falsy:</p>
+      	<ul>
+      		<li>false</li>
+      		<li>0 (zero)</li>
+      		<li>"" (empty string)</li>
+      		<li>Null (a variable, that exists but has no value. It is usually used as placeholders)</li>
+      		<li>Undefined (It means that you declare a variable but don't assign it any values. F.ex. Var a; a;)</li>
+      		<li>NaN (a special Number value meaning Not-a-Number! It is a value that turns up when we ask JavaScript to do certain impossible things in arithmetic.)</li>
+      	</ul>
+      	<p>All other values are truthy, including "0" (zero in quotes), "false" (false in quotes), empty functions, empty arrays, and empty objects.</p>
+      	<h4> Arrays</h4>
+      	<p>Arrays in JavaScript are just like lists. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's size length grow or shrink at any time, JavaScript arrays are not guaranteed to be dense. JavaScript arrays are zero-indexed: the first element of an array is at index 0, and the last element is at the index equal to the value of the array's length property minus 1.</p>
+      	<h4>What is JSON?</h4>
+      	<p>JavaScript Object Notation. JSON is a way to store information in an organized, easy-to-access manner, a popular and simple format for storing and transferring nested or hierarchal data. Python has a library capable of parsing and writing JSON (Python's JSON library). Internet GET and POST requests frequently pass data in JSON format. JSON allows for objects (or data of other types) to be easily encapsulated within other objects. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages.</p>
+      	<h4>JSON is built on two structures:</h4>
+      	<p>A collection of name/value pairs.</p>
+      	<p>An ordered list of values.</p>
+
+		</div>
+    </div>
 
       </div>
     </div>
@@ -499,5 +552,14 @@ The loop goes through each element of the collection, assigning that element to 
         {% endfor %}
       </div>
     </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type = "text/javascript">
+    	var awesomeThoughts = "<p>LIVE and EAT!</p>";
+    	var funThoughts = awesomeThoughts.replace("EAT", "LEARN");
+    	$("#main").append(funThoughts);
+	    console.log(funThoughts);
+	    
+    </script>
+    <script src="/js/bio.js"></script>
 </body>
 </html>
